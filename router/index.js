@@ -102,10 +102,44 @@ const apiRouter = () => {
      *     responses:
      *       200:
      *         description: ok
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       400:
      *         description: error query
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       500:
      *         description: error
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
+     *
      * 
      *   put:
      *     summary: Actualizar usuario
@@ -145,10 +179,44 @@ const apiRouter = () => {
      *     responses:
      *       200:
      *         description: ok
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       400:
      *         description: error query
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       500:
      *         description: error
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
+     *
      * 
      *   delete:
      *     summary: Elininar usuario
@@ -166,10 +234,44 @@ const apiRouter = () => {
      *     responses:
      *       200:
      *         description: ok
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       400:
      *         description: error query
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       500:
      *         description: error
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
+     *
      */
     routes.use("/user",userRouter);
     /**
@@ -191,10 +293,44 @@ const apiRouter = () => {
      *     responses:
      *       200:
      *         description: ok
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       400:
      *         description: error query
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       500:
      *         description: error
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
+     *
      *
      *   post:
      *     summary: Crear Prescripcion
@@ -224,10 +360,44 @@ const apiRouter = () => {
      *     responses:
      *       200:
      *         description: ok
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       400:
      *         description: error query
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       500:
      *         description: error
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
+     *
      * 
      *   put:
      *     summary: Actualizar Prescripcion
@@ -257,10 +427,44 @@ const apiRouter = () => {
      *     responses:
      *       200:
      *         description: ok
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       400:
      *         description: error query
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       500:
      *         description: error
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
+     *
      * 
      *   delete:
      *     summary: Obtenet Prescripcion
@@ -278,10 +482,44 @@ const apiRouter = () => {
      *     responses:
      *       200:
      *         description: ok
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       400:
      *         description: error query
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       500:
      *         description: error
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
+     *
      */
     routes.use("/prescription",prescRouter);
     /**
@@ -294,8 +532,31 @@ const apiRouter = () => {
      *     responses:
      *       200:
      *         description: ok
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       500:
      *         description: error
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
+     *
      * 
      * /api/v1/data/municipios:
      *   get:
@@ -314,8 +575,31 @@ const apiRouter = () => {
      *     responses:
      *       200:
      *         description: ok
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
      *       500:
      *         description: error
+     *         content:
+     *           application/json:
+     *             schema:
+     *               type: object
+     *               properties:
+     *                 status:
+     *                    type: integer
+     *                 message:
+     *                    type: string
+     *                 data:
+     *                    type: object
+     *
      */
     routes.use("/data",dataRouter);
 
