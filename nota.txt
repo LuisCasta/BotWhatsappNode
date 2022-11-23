@@ -1,0 +1,23 @@
+Petisiones desde Postman
+
+- curl:
+de landbot es posible obtener unos textos curl
+si este es el caso:
+1. damos clic en import, un boton de postman que esta arriba a la izquierda
+2. seleccionamos "Raw Text" y pegamos el curl
+3. damos clic en continuar y postman creara la peticion con esos datos
+
+- manual:
+en caso de que la peticion sea manual
+1. agregamos un request
+2. seleccionamos el tipo de llamada (get, post,...)
+3. colocamos la url
+4. si es necesario, llenamos los valores de parametro por url en "Params"
+5. en Headers agregamos las keys de:
+    Content-Type :: application/json
+    Authorization :: Token xxxx
+    ** con tu token de usuario api landbot
+6. si es requerido se envia un body dentro de "raw" en modo "JSON", que especifique la api
+
+ej https://api.landbot.io/v1/customers/:customer_id/
+sin body, parametro customer_id :: 221821856
