@@ -8,6 +8,7 @@ const {swaggerDocs : swaggerDocsV1} = require("./router/swagger")
 
 
 const PORT =  process.env.PORT || 3000;
+const HOST = '0.0.0.0';
 
 app.get('/', function (req, res) {
     res.send('Bienvenidos hmApp')
@@ -20,6 +21,6 @@ app.use(cors({origin:"*"}))
 app.use("/api/v1", routes());
 
 app.listen(PORT, () => {
-    console.log('Response from server node hm on port '+PORT)
+    console.log('Response from server node hm on host '+HOST+' port '+PORT)
     swaggerDocsV1(app,PORT)
 });
