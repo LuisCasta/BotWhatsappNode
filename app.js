@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -5,10 +7,13 @@ const cors = require('cors')
 const app = express()
 const routes = require('./router/index')
 const {swaggerDocs : swaggerDocsV1} = require("./router/swagger")
+const Cron = require('./services/CronService');
 
 
 const PORT =  process.env.PORT || 3000;
 const HOST = '0.0.0.0';
+
+Cron.initNotification();
 
 app.get('/', function (req, res) {
     res.send('Bienvenidos hmApp')
