@@ -36,9 +36,9 @@ async function executeQuery(queryString,calback){
                 
                 connection.release();
 
-                if(err) return calback({'status' : false, 'data':err})
+                if(err) return calback({'status' : false, 'info':err})
 
-                return calback({'status' : true, 'data':rows})
+                return calback({'status' : true, 'info':rows})
                 
                 
                 /*if(err){
