@@ -128,8 +128,11 @@ const DeleteUser = async(data) => {
         const query = `UPDATE users SET delete_at = '${delete_at}' 
             WHERE id = ${id_user}`;
         
-        await Mysql.executeQuery(query,(result) => {
-            //resolve(result)
+        await Mysql.executeQuery(query,({status,data}) => {
+            
+            if(!status)
+                reject(data)
+
             var resp = [];
             if(result.affectedRows > 0){
                 resp.status = 200;
@@ -141,6 +144,8 @@ const DeleteUser = async(data) => {
                 resp.data = {id_user:id_user, rows: result.affectedRows};
             }
             resolve(resp)
+            
+            
         })
     })
 }

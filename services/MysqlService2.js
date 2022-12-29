@@ -30,16 +30,27 @@ async function executeQuery(queryString,calback){
     if(await getConnectionLocal()){
 
         await poolLocal.getConnection( function(err, connection){
-            console.log('entra al local '+queryString)
+            //console.log('entra al local '+queryString)
+
             connection.query(queryString, async function(err, rows, fields) {
                 
-                if(err)
+                connection.release();
+
+                if(err) return calback({'status' : false, 'data':err})
+
+                return calback({'status' : true, 'data':rows})
+                
+                
+                /*if(err){
+
                     console.log(`error get from bdd ${err}`)
+                    return calback({'status' : false, 'data':err})
+                }
                 else{
                     console.log(rows)
-                    return calback(rows)
+                    return calback({'status' : true, 'data':rows})
                 }
-                connection.release();
+                connection.release();*/
                 
             })
         })
